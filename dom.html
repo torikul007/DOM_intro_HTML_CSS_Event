@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body style=" text-align: center ; margin: 20px 60px 20px 60px; ">
+    <head>
+        <script src="scriptForDom.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<h1 onclick=" this.innerHTML=' To Apply DOM click On Button!'">Click Here!! </h1>
+
+
+<h2 onclick="changeText(this)">Dom Event Using Function // click on This// </h2>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+</script>
+
+
+<section>
+     <p id="demo"> 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quod, iusto libero ipsum nulla magnam asperiores, eius laudantium adipisci laboriosam quisquam. Corporis consequuntur perferendis optio beatae quo praesentium repudiandae magnam.
+     </p>
+     <button type="button" id="button" 
+     onclick="document.getElementById('demo').style.color = 'red' " onclick="this.innerHTML(' Opps')">
+     DOM Applying Here</button>
+</section>
+<script>
+    function changeText(id) {
+  id.innerHTML = "Ooops!";
+</script>
+
+
+
+</body>
+</html>
